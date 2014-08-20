@@ -13,6 +13,32 @@
 		A744C53519A4F65B0028C438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A744C53319A4F65B0028C438 /* Main.storyboard */; };
 		A744C53719A4F65B0028C438 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A744C53619A4F65B0028C438 /* Images.xcassets */; };
 		A744C54319A4F65B0028C438 /* swiftrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C54219A4F65B0028C438 /* swiftrisTests.swift */; };
+		A744C58219A4F8E90028C438 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C57D19A4F8E90028C438 /* bomb.mp3 */; };
+		A744C58319A4F8E90028C438 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C57D19A4F8E90028C438 /* bomb.mp3 */; };
+		A744C58419A4F8E90028C438 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C57E19A4F8E90028C438 /* drop.mp3 */; };
+		A744C58519A4F8E90028C438 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C57E19A4F8E90028C438 /* drop.mp3 */; };
+		A744C58619A4F8E90028C438 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C57F19A4F8E90028C438 /* gameover.mp3 */; };
+		A744C58719A4F8E90028C438 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C57F19A4F8E90028C438 /* gameover.mp3 */; };
+		A744C58819A4F8E90028C438 /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C58019A4F8E90028C438 /* levelup.mp3 */; };
+		A744C58919A4F8E90028C438 /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C58019A4F8E90028C438 /* levelup.mp3 */; };
+		A744C58A19A4F8E90028C438 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C58119A4F8E90028C438 /* theme.mp3 */; };
+		A744C58B19A4F8E90028C438 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A744C58119A4F8E90028C438 /* theme.mp3 */; };
+		A744C58D19A4F8FF0028C438 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A744C58C19A4F8FF0028C438 /* Sprites.atlas */; };
+		A744C58E19A4F8FF0028C438 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A744C58C19A4F8FF0028C438 /* Sprites.atlas */; };
+		A744C59619A4F91C0028C438 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59019A4F91C0028C438 /* background.png */; };
+		A744C59719A4F91C0028C438 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59019A4F91C0028C438 /* background.png */; };
+		A744C59819A4F91C0028C438 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59119A4F91C0028C438 /* background@2x.png */; };
+		A744C59919A4F91C0028C438 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59119A4F91C0028C438 /* background@2x.png */; };
+		A744C59A19A4F91C0028C438 /* gameboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59219A4F91C0028C438 /* gameboard.png */; };
+		A744C59B19A4F91C0028C438 /* gameboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59219A4F91C0028C438 /* gameboard.png */; };
+		A744C59C19A4F91C0028C438 /* gameboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59319A4F91C0028C438 /* gameboard@2x.png */; };
+		A744C59D19A4F91C0028C438 /* gameboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59319A4F91C0028C438 /* gameboard@2x.png */; };
+		A744C59E19A4F91C0028C438 /* whitebg.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59419A4F91C0028C438 /* whitebg.png */; };
+		A744C59F19A4F91C0028C438 /* whitebg.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59419A4F91C0028C438 /* whitebg.png */; };
+		A744C5A019A4F91C0028C438 /* whitebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59519A4F91C0028C438 /* whitebg@2x.png */; };
+		A744C5A119A4F91C0028C438 /* whitebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A744C59519A4F91C0028C438 /* whitebg@2x.png */; };
+		A744C5A319A4FDB60028C438 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C5A219A4FDB60028C438 /* Array2D.swift */; };
+		A744C5A419A4FDB60028C438 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C5A219A4FDB60028C438 /* Array2D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +62,19 @@
 		A744C53C19A4F65B0028C438 /* swiftrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A744C54119A4F65B0028C438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A744C54219A4F65B0028C438 /* swiftrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftrisTests.swift; sourceTree = "<group>"; };
+		A744C57D19A4F8E90028C438 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		A744C57E19A4F8E90028C438 /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drop.mp3; sourceTree = "<group>"; };
+		A744C57F19A4F8E90028C438 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		A744C58019A4F8E90028C438 /* levelup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelup.mp3; sourceTree = "<group>"; };
+		A744C58119A4F8E90028C438 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
+		A744C58C19A4F8FF0028C438 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		A744C59019A4F91C0028C438 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A744C59119A4F91C0028C438 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		A744C59219A4F91C0028C438 /* gameboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameboard.png; sourceTree = "<group>"; };
+		A744C59319A4F91C0028C438 /* gameboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameboard@2x.png"; sourceTree = "<group>"; };
+		A744C59419A4F91C0028C438 /* whitebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebg.png; sourceTree = "<group>"; };
+		A744C59519A4F91C0028C438 /* whitebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whitebg@2x.png"; sourceTree = "<group>"; };
+		A744C5A219A4FDB60028C438 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +116,7 @@
 		A744C52819A4F65B0028C438 /* swiftris */ = {
 			isa = PBXGroup;
 			children = (
+				A744C5A219A4FDB60028C438 /* Array2D.swift */,
 				A744C52B19A4F65B0028C438 /* AppDelegate.swift */,
 				A744C52F19A4F65B0028C438 /* GameScene.swift */,
 				A744C53119A4F65B0028C438 /* GameViewController.swift */,
@@ -90,6 +130,9 @@
 		A744C52919A4F65B0028C438 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A744C58F19A4F91C0028C438 /* Images */,
+				A744C58C19A4F8FF0028C438 /* Sprites.atlas */,
+				A744C57C19A4F8E90028C438 /* Sounds */,
 				A744C52A19A4F65B0028C438 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +153,31 @@
 				A744C54119A4F65B0028C438 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A744C57C19A4F8E90028C438 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A744C57D19A4F8E90028C438 /* bomb.mp3 */,
+				A744C57E19A4F8E90028C438 /* drop.mp3 */,
+				A744C57F19A4F8E90028C438 /* gameover.mp3 */,
+				A744C58019A4F8E90028C438 /* levelup.mp3 */,
+				A744C58119A4F8E90028C438 /* theme.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A744C58F19A4F91C0028C438 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A744C59019A4F91C0028C438 /* background.png */,
+				A744C59119A4F91C0028C438 /* background@2x.png */,
+				A744C59219A4F91C0028C438 /* gameboard.png */,
+				A744C59319A4F91C0028C438 /* gameboard@2x.png */,
+				A744C59419A4F91C0028C438 /* whitebg.png */,
+				A744C59519A4F91C0028C438 /* whitebg@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +261,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A744C53719A4F65B0028C438 /* Images.xcassets in Resources */,
+				A744C58619A4F8E90028C438 /* gameover.mp3 in Resources */,
+				A744C59E19A4F91C0028C438 /* whitebg.png in Resources */,
+				A744C58D19A4F8FF0028C438 /* Sprites.atlas in Resources */,
+				A744C59C19A4F91C0028C438 /* gameboard@2x.png in Resources */,
 				A744C53519A4F65B0028C438 /* Main.storyboard in Resources */,
+				A744C58219A4F8E90028C438 /* bomb.mp3 in Resources */,
+				A744C5A019A4F91C0028C438 /* whitebg@2x.png in Resources */,
+				A744C58819A4F8E90028C438 /* levelup.mp3 in Resources */,
+				A744C58A19A4F8E90028C438 /* theme.mp3 in Resources */,
+				A744C59619A4F91C0028C438 /* background.png in Resources */,
+				A744C59819A4F91C0028C438 /* background@2x.png in Resources */,
+				A744C59A19A4F91C0028C438 /* gameboard.png in Resources */,
+				A744C58419A4F8E90028C438 /* drop.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +281,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A744C58E19A4F8FF0028C438 /* Sprites.atlas in Resources */,
+				A744C5A119A4F91C0028C438 /* whitebg@2x.png in Resources */,
+				A744C58319A4F8E90028C438 /* bomb.mp3 in Resources */,
+				A744C59F19A4F91C0028C438 /* whitebg.png in Resources */,
+				A744C59B19A4F91C0028C438 /* gameboard.png in Resources */,
+				A744C59D19A4F91C0028C438 /* gameboard@2x.png in Resources */,
+				A744C59719A4F91C0028C438 /* background.png in Resources */,
+				A744C58519A4F8E90028C438 /* drop.mp3 in Resources */,
+				A744C58919A4F8E90028C438 /* levelup.mp3 in Resources */,
+				A744C58719A4F8E90028C438 /* gameover.mp3 in Resources */,
+				A744C59919A4F91C0028C438 /* background@2x.png in Resources */,
+				A744C58B19A4F8E90028C438 /* theme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A744C53019A4F65B0028C438 /* GameScene.swift in Sources */,
+				A744C5A319A4FDB60028C438 /* Array2D.swift in Sources */,
 				A744C53219A4F65B0028C438 /* GameViewController.swift in Sources */,
 				A744C52C19A4F65B0028C438 /* AppDelegate.swift in Sources */,
 			);
@@ -222,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A744C54319A4F65B0028C438 /* swiftrisTests.swift in Sources */,
+				A744C5A419A4FDB60028C438 /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
