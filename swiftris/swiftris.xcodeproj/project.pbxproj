@@ -41,6 +41,22 @@
 		A744C5A419A4FDB60028C438 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C5A219A4FDB60028C438 /* Array2D.swift */; };
 		A744C5A719A501EA0028C438 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C5A619A501EA0028C438 /* Block.swift */; };
 		A744C5A819A501EA0028C438 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C5A619A501EA0028C438 /* Block.swift */; };
+		A744C5AA19A505B90028C438 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C5A919A505B90028C438 /* Shape.swift */; };
+		A744C5AB19A505B90028C438 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A744C5A919A505B90028C438 /* Shape.swift */; };
+		A7900DFE19A62C86009C0CD0 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900DFD19A62C86009C0CD0 /* SquareShape.swift */; };
+		A7900DFF19A62C86009C0CD0 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900DFD19A62C86009C0CD0 /* SquareShape.swift */; };
+		A7900E0119A62D54009C0CD0 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0019A62D54009C0CD0 /* TShape.swift */; };
+		A7900E0219A62D54009C0CD0 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0019A62D54009C0CD0 /* TShape.swift */; };
+		A7900E0519A62DC9009C0CD0 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0419A62DC9009C0CD0 /* LineShape.swift */; };
+		A7900E0619A62DC9009C0CD0 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0419A62DC9009C0CD0 /* LineShape.swift */; };
+		A7900E0819A62E0C009C0CD0 /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0719A62E0C009C0CD0 /* LShape.swift */; };
+		A7900E0919A62E0C009C0CD0 /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0719A62E0C009C0CD0 /* LShape.swift */; };
+		A7900E0B19A62E50009C0CD0 /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0A19A62E50009C0CD0 /* JShape.swift */; };
+		A7900E0C19A62E50009C0CD0 /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0A19A62E50009C0CD0 /* JShape.swift */; };
+		A7900E0E19A62EAA009C0CD0 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0D19A62EAA009C0CD0 /* SShape.swift */; };
+		A7900E0F19A62EAA009C0CD0 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E0D19A62EAA009C0CD0 /* SShape.swift */; };
+		A7900E1119A62F03009C0CD0 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E1019A62F03009C0CD0 /* ZShape.swift */; };
+		A7900E1219A62F03009C0CD0 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7900E1019A62F03009C0CD0 /* ZShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +94,14 @@
 		A744C59519A4F91C0028C438 /* whitebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whitebg@2x.png"; sourceTree = "<group>"; };
 		A744C5A219A4FDB60028C438 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		A744C5A619A501EA0028C438 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Block.swift; path = Model/Block.swift; sourceTree = "<group>"; };
+		A744C5A919A505B90028C438 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Model/Shape.swift; sourceTree = "<group>"; };
+		A7900DFD19A62C86009C0CD0 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SquareShape.swift; path = Model/SquareShape.swift; sourceTree = "<group>"; };
+		A7900E0019A62D54009C0CD0 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TShape.swift; path = Model/TShape.swift; sourceTree = "<group>"; };
+		A7900E0419A62DC9009C0CD0 /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineShape.swift; path = Model/LineShape.swift; sourceTree = "<group>"; };
+		A7900E0719A62E0C009C0CD0 /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LShape.swift; path = Model/LShape.swift; sourceTree = "<group>"; };
+		A7900E0A19A62E50009C0CD0 /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JShape.swift; path = Model/JShape.swift; sourceTree = "<group>"; };
+		A7900E0D19A62EAA009C0CD0 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SShape.swift; path = Model/SShape.swift; sourceTree = "<group>"; };
+		A7900E1019A62F03009C0CD0 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZShape.swift; path = Model/ZShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,10 +210,26 @@
 		A744C5A519A501C40028C438 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A7900E0319A62D9F009C0CD0 /* Final Shapes */,
 				A744C5A219A4FDB60028C438 /* Array2D.swift */,
 				A744C5A619A501EA0028C438 /* Block.swift */,
+				A744C5A919A505B90028C438 /* Shape.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A7900E0319A62D9F009C0CD0 /* Final Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				A7900E0019A62D54009C0CD0 /* TShape.swift */,
+				A7900DFD19A62C86009C0CD0 /* SquareShape.swift */,
+				A7900E0419A62DC9009C0CD0 /* LineShape.swift */,
+				A7900E0719A62E0C009C0CD0 /* LShape.swift */,
+				A7900E0A19A62E50009C0CD0 /* JShape.swift */,
+				A7900E0D19A62EAA009C0CD0 /* SShape.swift */,
+				A7900E1019A62F03009C0CD0 /* ZShape.swift */,
+			);
+			name = "Final Shapes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +355,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7900E0819A62E0C009C0CD0 /* LShape.swift in Sources */,
+				A7900DFE19A62C86009C0CD0 /* SquareShape.swift in Sources */,
 				A744C53019A4F65B0028C438 /* GameScene.swift in Sources */,
+				A7900E0B19A62E50009C0CD0 /* JShape.swift in Sources */,
+				A744C5AA19A505B90028C438 /* Shape.swift in Sources */,
 				A744C5A319A4FDB60028C438 /* Array2D.swift in Sources */,
+				A7900E0519A62DC9009C0CD0 /* LineShape.swift in Sources */,
+				A7900E0E19A62EAA009C0CD0 /* SShape.swift in Sources */,
+				A7900E0119A62D54009C0CD0 /* TShape.swift in Sources */,
 				A744C5A719A501EA0028C438 /* Block.swift in Sources */,
 				A744C53219A4F65B0028C438 /* GameViewController.swift in Sources */,
+				A7900E1119A62F03009C0CD0 /* ZShape.swift in Sources */,
 				A744C52C19A4F65B0028C438 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,9 +375,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7900E0219A62D54009C0CD0 /* TShape.swift in Sources */,
 				A744C5A819A501EA0028C438 /* Block.swift in Sources */,
 				A744C54319A4F65B0028C438 /* swiftrisTests.swift in Sources */,
 				A744C5A419A4FDB60028C438 /* Array2D.swift in Sources */,
+				A7900E0C19A62E50009C0CD0 /* JShape.swift in Sources */,
+				A7900E0F19A62EAA009C0CD0 /* SShape.swift in Sources */,
+				A7900E0919A62E0C009C0CD0 /* LShape.swift in Sources */,
+				A7900DFF19A62C86009C0CD0 /* SquareShape.swift in Sources */,
+				A7900E1219A62F03009C0CD0 /* ZShape.swift in Sources */,
+				A744C5AB19A505B90028C438 /* Shape.swift in Sources */,
+				A7900E0619A62DC9009C0CD0 /* LineShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +563,7 @@
 				A744C54819A4F65B0028C438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A744C54919A4F65B0028C438 /* Build configuration list for PBXNativeTarget "swiftrisTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +572,7 @@
 				A744C54B19A4F65B0028C438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
