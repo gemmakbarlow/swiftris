@@ -111,6 +111,32 @@ class Shape: Hashable, Printable {
     }
     
     
+    final func rotateClockwise() {
+        let newOrientation = Orientation.rotate(currentOrientation, clockwise: true)
+        rotateBlocks(newOrientation)
+        currentOrientation = newOrientation
+    }
+    
+    final func rotateCounterClockwise() {
+        let newOrientation = Orientation.rotate(currentOrientation, clockwise: false)
+        rotateBlocks(newOrientation)
+        currentOrientation = newOrientation
+    }
+    
+    
+    final func raiseShapeByOneRow() {
+        shiftBy(0, rows:-1)
+    }
+    
+    final func shiftRightByOneColumn() {
+        shiftBy(1, rows:0)
+    }
+    
+    final func shiftLeftByOneColumn() {
+        shiftBy(-1, rows:0)
+    }
+    
+    
     final func lowerShapeByOneRow() {
         shiftBy(0, rows:1)
     }
