@@ -85,6 +85,9 @@ class Shape: Hashable, Printable {
         self.init(column:column, row:row, color:BlockColor.random(), orientation:Orientation.random())
     }
     
+    
+    // MARK: - Block Manipulation
+    
     final func initializeBlocks() {
         if let blockRowColumnTranslations = blockRowColumnPositions[currentOrientation] {
             for i in 0..<blockRowColumnTranslations.count {
@@ -93,6 +96,59 @@ class Shape: Hashable, Printable {
                 let newBlock = Block(column: blockColumn, row: blockRow, color: color)
                 blocks.append(newBlock)
             }
+        }
+    }
+    
+    
+    final func rotateBlocks(orientation: Orientation) {
+        if let blockRowColumnTranslation:Array<(columnDiff: Int, rowDiff: Int)> = blockRowColumnPositions[orientation] {
+            // #1
+            for (idx, (columnDiff:Int, rowDiff:Int)) in enumerate(blockRowColumnTranslation) {
+                blocks[idx].column = column + columnDiff
+                blocks[idx].row = row + rowDiff
+            }
+        }
+    }
+    
+    
+    final func lowerShapeByOneRow() {
+        shiftBy(0, rows:1)
+    }
+    
+
+    final func shiftBy(columns: Int, rows: Int) {
+        self.column += columns
+        self.row += rows
+        for block in blocks {
+            block.column += columns
+            block.row += rows
+        }
+    }
+    
+
+    final func moveTo(column: Int, row:Int) {
+        self.column = column
+        self.row = row
+        rotateBlocks(currentOrientation)
+    }
+    
+    
+    final class func random(startingColumn:Int, startingRow:Int) -> Shape {
+        switch Int(arc4random_uniform(TotalShapeVarietiesCount)) {
+            case 0:
+                return SquareShape(column:startingColumn, row:startingRow)
+            case 1:
+                return LineShape(column:startingColumn, row:startingRow)
+            case 2:
+                return TShape(column:startingColumn, row:startingRow)
+            case 3:
+                return LShape(column:startingColumn, row:startingRow)
+            case 4:
+                return JShape(column:startingColumn, row:startingRow)
+            case 5:
+                return SShape(column:startingColumn, row:startingRow)
+            default:
+                return ZShape(column:startingColumn, row:startingRow)
         }
     }
     
@@ -121,8 +177,9 @@ class Shape: Hashable, Printable {
     var bottomBlocks:Array<Block> {
         if let bottomBlocks = bottomBlocksForOrientations[currentOrientation] {
             return bottomBlocks
-            }
+        } else {
             return []
+        }
     }
     
 }
