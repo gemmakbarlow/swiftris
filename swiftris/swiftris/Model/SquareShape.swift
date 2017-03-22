@@ -23,20 +23,20 @@ class SquareShape:Shape {
     // #2
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [
-            Orientation.Zero: [(0, 0), (1, 0), (0, 1), (1, 1)],
-            Orientation.OneEighty: [(0, 0), (1, 0), (0, 1), (1, 1)],
-            Orientation.Ninety: [(0, 0), (1, 0), (0, 1), (1, 1)],
-            Orientation.TwoSeventy: [(0, 0), (1, 0), (0, 1), (1, 1)]
+            Orientation.zero: [(0, 0), (1, 0), (0, 1), (1, 1)],
+            Orientation.oneEighty: [(0, 0), (1, 0), (0, 1), (1, 1)],
+            Orientation.ninety: [(0, 0), (1, 0), (0, 1), (1, 1)],
+            Orientation.twoSeventy: [(0, 0), (1, 0), (0, 1), (1, 1)]
             ]
     }
     
     // #3
     override var bottomBlocksForOrientations: [Orientation: Array<Block>] {
         return [
-            Orientation.Zero:       [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
-            Orientation.OneEighty:  [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
-            Orientation.Ninety:     [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
-            Orientation.TwoSeventy: [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]]
+            Orientation.zero:       [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
+            Orientation.oneEighty:  [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
+            Orientation.ninety:     [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
+            Orientation.twoSeventy: [blocks[ThirdBlockIndex], blocks[FourthBlockIndex]]
             ]
     }
 }

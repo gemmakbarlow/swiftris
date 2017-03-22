@@ -13,35 +13,35 @@ import SpriteKit
 
 let OrientationsCount: UInt32 = 4
 
-enum Orientation: Int, Printable {
+enum Orientation: Int, CustomStringConvertible {
     
-    case Zero = 0, Ninety, OneEighty, TwoSeventy
+    case zero = 0, ninety, oneEighty, twoSeventy
     
     var description: String {
         switch self {
-        case .Zero:
+        case .zero:
             return "0"
-        case .Ninety:
+        case .ninety:
             return "90"
-        case .OneEighty:
+        case .oneEighty:
             return "180"
-        case .TwoSeventy:
+        case .twoSeventy:
             return "270"
         }
     }
     
     static func random() -> Orientation {
-        return Orientation.fromRaw(Int(arc4random_uniform(OrientationsCount)))!
+        return Orientation(rawValue: Int(arc4random_uniform(OrientationsCount)))!
     }
     
-    static func rotate(orientation:Orientation, clockwise: Bool) -> Orientation {
-        var rotated = orientation.toRaw() + (clockwise ? 1 : -1)
-        if rotated > Orientation.TwoSeventy.toRaw() {
-            rotated = Orientation.Zero.toRaw()
+    static func rotate(_ orientation:Orientation, clockwise: Bool) -> Orientation {
+        var rotated = orientation.rawValue + (clockwise ? 1 : -1)
+        if rotated > Orientation.twoSeventy.rawValue {
+            rotated = Orientation.zero.rawValue
         } else if rotated < 0 {
-            rotated = Orientation.TwoSeventy.toRaw()
+            rotated = Orientation.twoSeventy.rawValue
         }
-        return Orientation.fromRaw(rotated)!
+        return Orientation(rawValue: rotated)!
     }
 }
 
@@ -53,10 +53,10 @@ enum Orientation: Int, Printable {
 let TotalShapeVarietiesCount: UInt32 = 7
 
 enum BlockIndex: Int {
-    case FirstBlockIndex = 0, SecondBlockIndex = 1, ThirdBlockIndex = 2, FourthBlockIndex = 3
+    case firstBlockIndex = 0, secondBlockIndex = 1, thirdBlockIndex = 2, fourthBlockIndex = 3
 }
 
-class Shape: Hashable, Printable {
+class Shape: Hashable, CustomStringConvertible {
     
     let color: BlockColor
     var blocks = Array<Block>() // GB - Blocks comprising the shape
@@ -100,12 +100,12 @@ class Shape: Hashable, Printable {
     }
     
     
-    final func rotateBlocks(orientation: Orientation) {
-        if let blockRowColumnTranslation:Array<(columnDiff: Int, rowDiff: Int)> = blockRowColumnPositions[orientation] {
+    final func rotateBlocks(_ orientation: Orientation) {
+        if let blockRowColumnTranslation: Array<(columnDiff: Int, rowDiff: Int) >= blockRowColumnPositions[orientation] {
             // #1
-            for (idx, (columnDiff:Int, rowDiff:Int)) in enumerate(blockRowColumnTranslation) {
-                blocks[idx].column = column + columnDiff
-                blocks[idx].row = row + rowDiff
+            for (idx, element) in blockRowColumnTranslation.enumerated() {
+                blocks[idx].column = column + element.columnDiff
+                blocks[idx].row = row + element.rowDiff
             }
         }
     }
@@ -142,7 +142,7 @@ class Shape: Hashable, Printable {
     }
     
 
-    final func shiftBy(columns: Int, rows: Int) {
+    final func shiftBy(_ columns: Int, rows: Int) {
         self.column += columns
         self.row += rows
         for block in blocks {
@@ -152,14 +152,14 @@ class Shape: Hashable, Printable {
     }
     
 
-    final func moveTo(column: Int, row:Int) {
+    final func moveTo(_ column: Int, row:Int) {
         self.column = column
         self.row = row
         rotateBlocks(currentOrientation)
     }
     
     
-    final class func random(startingColumn:Int, startingRow:Int) -> Shape {
+    final class func random(_ startingColumn:Int, startingRow:Int) -> Shape {
         switch Int(arc4random_uniform(TotalShapeVarietiesCount)) {
             case 0:
                 return SquareShape(column:startingColumn, row:startingRow)
@@ -181,12 +181,12 @@ class Shape: Hashable, Printable {
     
     // GB - Hashable
     var hashValue:Int {
-        return reduce(blocks, 0) { $0.hashValue ^ $1.hashValue }
+        return blocks.reduce(0, { $0.hashValue ^ $1.hashValue })
     }
     
     // GB - Printable
     var description:String {
-        return "\(color) block facing \(currentOrientation): \(blocks[FirstBlockIndex]), \(blocks[SecondBlockIndex]), \(blocks[ThirdBlockIndex]), \(blocks[FourthBlockIndex)"
+        return "\(color) block facing \(currentOrientation): \(blocks[FirstBlockIndex]), \(blocks[SecondBlockIndex]), \(blocks[ThirdBlockIndex]), \(blocks[FourthBlockIndex])"
     }
     
     
@@ -218,6 +218,6 @@ func ==(lhs: Shape, rhs: Shape) -> Bool {
     
     return  lhs.column == rhs.column &&
             lhs.row == rhs.row &&
-            lhs.color.toRaw() == rhs.color.toRaw() &&
+            lhs.color == rhs.color &&
             lhs.blocks.count == rhs.blocks.count
 }

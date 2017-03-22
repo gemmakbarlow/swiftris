@@ -23,7 +23,7 @@ class Array2D<T>  {
     init(rows: Int, columns: Int) {
         self.rows = rows;
         self.columns = columns;
-        array = Array<T?>(count:rows * columns, repeatedValue: nil)
+        array = Array<T?>(repeating: nil, count: rows * columns)
     }
     
     
