@@ -10,9 +10,9 @@ import SpriteKit
 
 let NumberOfColors: UInt32 = 6;
 
-enum BlockColor: Int, Printable {
+enum BlockColor: Int, CustomStringConvertible {
    
-    case Blue = 0, Orange, Purple, Red, Teal, Yellow
+    case blue = 0, orange, purple, red, teal, yellow
     
     
     // MARK: - Printable
@@ -20,17 +20,17 @@ enum BlockColor: Int, Printable {
     var spriteName: String {
         
         switch self {
-        case .Blue:
+        case .blue:
             return "blue"
-        case .Orange:
+        case .orange:
             return "orange"
-        case .Purple:
+        case .purple:
             return "purple"
-        case .Red:
+        case .red:
             return "red"
-        case .Teal:
+        case .teal:
             return "teal"
-        case .Yellow:
+        case .yellow:
             return "yellow"
             }
     }
@@ -44,13 +44,13 @@ enum BlockColor: Int, Printable {
     
     static func random() -> BlockColor {
         // GB - This is an odd way to get a random number, but OK
-        return BlockColor.fromRaw(Int(arc4random_uniform(NumberOfColors)))!
+        return BlockColor(rawValue: Int(arc4random_uniform(NumberOfColors)))!
     }
     
 }
 
 
-class Block: Hashable, Printable {
+class Block: Hashable, CustomStringConvertible {
     
     let color: BlockColor
     
@@ -83,6 +83,6 @@ class Block: Hashable, Printable {
 
 
 func ==(lhs: Block, rhs: Block) -> Bool {
-    return lhs.column == rhs.column && lhs.row == rhs.row && lhs.color.toRaw() == rhs.color.toRaw()
+    return lhs.column == rhs.column && lhs.row == rhs.row && lhs.color.rawValue == rhs.color.rawValue
 }
 

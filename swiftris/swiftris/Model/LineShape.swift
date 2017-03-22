@@ -29,19 +29,19 @@ class LineShape:Shape {
     
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [
-            Orientation.Zero:       [(0, 0), (0, 1), (0, 2), (0, 3)],
-            Orientation.Ninety:     [(-1,0), (0, 0), (1, 0), (2, 0)],
-            Orientation.OneEighty:  [(0, 0), (0, 1), (0, 2), (0, 3)],
-            Orientation.TwoSeventy: [(-1,0), (0, 0), (1, 0), (2, 0)]
+            Orientation.zero:       [(0, 0), (0, 1), (0, 2), (0, 3)],
+            Orientation.ninety:     [(-1,0), (0, 0), (1, 0), (2, 0)],
+            Orientation.oneEighty:  [(0, 0), (0, 1), (0, 2), (0, 3)],
+            Orientation.twoSeventy: [(-1,0), (0, 0), (1, 0), (2, 0)]
             ]
     }
     
     override var bottomBlocksForOrientations: [Orientation: Array<Block>] {
         return [
-            Orientation.Zero:       [blocks[FourthBlockIndex]],
-            Orientation.Ninety:     blocks,
-            Orientation.OneEighty:  [blocks[FourthBlockIndex]],
-            Orientation.TwoSeventy: blocks
+            Orientation.zero:       [blocks[FourthBlockIndex]],
+            Orientation.ninety:     blocks,
+            Orientation.oneEighty:  [blocks[FourthBlockIndex]],
+            Orientation.twoSeventy: blocks
             ]
     }
 }

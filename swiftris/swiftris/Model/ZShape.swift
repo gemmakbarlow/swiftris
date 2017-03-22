@@ -40,19 +40,19 @@ class ZShape:Shape {
     
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [
-            Orientation.Zero:       [(1, 0), (1, 1), (0, 1), (0, 2)],
-            Orientation.Ninety:     [(-1,0), (0, 0), (0, 1), (1, 1)],
-            Orientation.OneEighty:  [(1, 0), (1, 1), (0, 1), (0, 2)],
-            Orientation.TwoSeventy: [(-1,0), (0, 0), (0, 1), (1, 1)]
+            Orientation.zero:       [(1, 0), (1, 1), (0, 1), (0, 2)],
+            Orientation.ninety:     [(-1,0), (0, 0), (0, 1), (1, 1)],
+            Orientation.oneEighty:  [(1, 0), (1, 1), (0, 1), (0, 2)],
+            Orientation.twoSeventy: [(-1,0), (0, 0), (0, 1), (1, 1)]
             ]
     }
     
     override var bottomBlocksForOrientations: [Orientation: Array<Block>] {
         return [
-            Orientation.Zero:       [blocks[SecondBlockIndex], blocks[FourthBlockIndex]],
-            Orientation.Ninety:     [blocks[FirstBlockIndex], blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
-            Orientation.OneEighty:  [blocks[SecondBlockIndex], blocks[FourthBlockIndex]],
-            Orientation.TwoSeventy: [blocks[FirstBlockIndex], blocks[ThirdBlockIndex], blocks[FourthBlockIndex]]
+            Orientation.zero:       [blocks[SecondBlockIndex], blocks[FourthBlockIndex]],
+            Orientation.ninety:     [blocks[FirstBlockIndex], blocks[ThirdBlockIndex], blocks[FourthBlockIndex]],
+            Orientation.oneEighty:  [blocks[SecondBlockIndex], blocks[FourthBlockIndex]],
+            Orientation.twoSeventy: [blocks[FirstBlockIndex], blocks[ThirdBlockIndex], blocks[FourthBlockIndex]]
             ]
     }
 }
