@@ -101,7 +101,7 @@ class Shape: Hashable, CustomStringConvertible {
     
     
     final func rotateBlocks(_ orientation: Orientation) {
-        if let blockRowColumnTranslation: Array<(columnDiff: Int, rowDiff: Int) >= blockRowColumnPositions[orientation] {
+        if let blockRowColumnTranslation: Array<(columnDiff: Int, rowDiff: Int) > = blockRowColumnPositions[orientation] {
             // #1
             for (idx, element) in blockRowColumnTranslation.enumerated() {
                 blocks[idx].column = column + element.columnDiff
