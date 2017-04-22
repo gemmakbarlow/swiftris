@@ -184,7 +184,7 @@ class GameScene: SKScene {
                 
                 let randomDuration = TimeInterval(arc4random_uniform(2)) + 0.5
                 // #5
-                var startAngle = CGFloat(M_PI)
+                var startAngle = CGFloat(Double.pi)
                 var endAngle = startAngle * 2
                 if goLeft {
                     endAngle = startAngle
